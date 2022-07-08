@@ -1,0 +1,37 @@
+{
+  "name": "vizmo-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite --port 3001",
+    "preview": "vite preview --port 3001"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@quasar/extras": "^1.0.0",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.0.3",
+    "lodash": "^4.17.21",
+    "quasar": "^2.7.5",
+    "vite-plugin-import-context": "^1.0.0-rc.1",
+    "vue": "^3.2.37",
+    "vue-router": "4",
+    "webpack-env": "^0.8.0"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-require-context": "^1.0.9",
+    "@quasar/vite-plugin": "^1.0.10",
+    "@types/webpack-env": "^1.17.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "sass": "1.32.12",
+    "sass-loader": "^12.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.13",
+    "vue-cli-plugin-quasar": "~5.0.1",
+    "vue-tsc": "^0.38.2"
+  },
+  "type": "module"
+}
