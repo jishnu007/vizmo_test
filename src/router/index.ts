@@ -12,6 +12,16 @@ const routes: Array<RouteRecordRaw> = [
     name: "Employees",
     component: () => import("../views/Employees.vue"),
   },
+  {
+    path: "/stats",
+    name: "Stats",
+    component: ()=>import("../views/NotFound.vue") 
+  },
+  {
+    path: "/settings",
+    name: "Settings",
+    component: ()=>import("../views/NotFound.vue") 
+  },
   { 
     path: "/:pathMatch(.*)*",
     component: ()=>import("../views/NotFound.vue") 

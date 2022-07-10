@@ -6,18 +6,14 @@ import router from "./router";
 import { Quasar } from 'quasar'
 import '@quasar/extras/material-icons/material-icons.css'
 import 'quasar/src/css/index.sass'
+import "@quasar/extras/mdi-v4/mdi-v4.css";
 import DashboardLayout from './layouts/DashboardLayout.vue';
-/* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
-
-/* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-/* import specific icons */
-import { faHardDrive } from '@fortawesome/free-regular-svg-icons'
+import { faHardDrive, faFile, faCalendar, faUser,faBuilding,faChartBar,faBookmark,faBell,faMessage } from '@fortawesome/free-regular-svg-icons';
 
-/* add icons to the library */
-library.add(faHardDrive)
+library.add(faHardDrive,faFile,faUser,faBuilding,faCalendar,faChartBar,faBookmark,faBell,faMessage )
 
 export const app = createApp(App)
 app.use(Quasar,  {
