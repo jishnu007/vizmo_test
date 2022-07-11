@@ -4,6 +4,7 @@
     <router-link v-for="(item, index) in routes" :to="item.link">
       <font-awesome-icon
         class="sidebar__icon"
+        :class="item.link == $router.path ? 'active' : ''"
         :icon="`fa-regular ${item.icon}`"
         :style="{ color: 'white' }"
       />
@@ -64,13 +65,18 @@ export default {
   }
   &__icon {
     padding: 8px 8px;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 18px;
     height: 18px;
     width: 18px;
     margin-bottom: 4px;
     &:hover {
       background: #7fa3ff;
+    }
+  }
+  .router-link-exact-active {
+    .sidebar__icon {
+      background: #7fa3ff !important;
     }
   }
 }
