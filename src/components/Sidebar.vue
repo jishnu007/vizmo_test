@@ -1,14 +1,16 @@
 <template>
-  <div class="sidebar">
-    <q-img src="logo.jpg" class="sidebar__logo" />
-    <router-link v-for="(item, index) in routes" :to="item.link">
-      <font-awesome-icon
-        class="sidebar__icon"
-        :class="item.link == $router.path ? 'active' : ''"
-        :icon="`fa-regular ${item.icon}`"
-        :style="{ color: 'white' }"
-      />
-    </router-link>
+  <div class="sidebar__outer">
+    <div class="sidebar">
+      <q-img src="logo.jpg" class="sidebar__logo" />
+      <router-link v-for="(item, index) in routes" :to="item.link">
+        <font-awesome-icon
+          class="sidebar__icon"
+          :class="item.link == $router.path ? 'active' : ''"
+          :icon="`fa-regular ${item.icon}`"
+          :style="{ color: 'white' }"
+        />
+      </router-link>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -58,8 +60,11 @@ export default {
   display: flex;
   flex-direction: column;
   background: #222b49;
+  position: sticky;
+  z-index: 99;
   height: 100vh;
   padding: 8px;
+  position: fixed;
   &__logo {
     margin-bottom: 32px;
   }
@@ -79,5 +84,8 @@ export default {
       background: #7fa3ff !important;
     }
   }
+}
+.sidebar__outer{
+  position: relative;
 }
 </style>

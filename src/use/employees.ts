@@ -15,7 +15,8 @@ export interface params {
   limit?:Number,
   l?:Number
   sortBy?:String,
-  order?:Order
+  order?:Order,
+  search?:String
 }
 const employees = reactive<list>({
   list: [],

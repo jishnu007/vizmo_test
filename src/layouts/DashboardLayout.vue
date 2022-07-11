@@ -28,14 +28,17 @@ export default {
   display: flex;
   height: 100vh;
   width: 100vw;
+  background: #fcfcfc !important;
+  overflow: hidden;
   &__right {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-left: 60px;
   }
   &__main {
     display: flex;
-    background: #fcfcfc !important;
+
     width: 100%;
     height: 100%;
   }
